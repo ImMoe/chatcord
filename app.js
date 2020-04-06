@@ -4,7 +4,7 @@ const socket = require("socket.io");
 const app = express();
 app.use(express.static("public"));
 
-const Server = app.listen(3000);
+const Server = app.listen(process.env.PORT || 3000);
 const io = socket(Server);
 
 io.on("connection", function (socket) {
