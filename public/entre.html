@@ -1,0 +1,41 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.3.0/socket.io.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <title>Chatcord - Pick a name</title>
+    <style>
+        body {
+            background-color: #222831;
+        }
+
+        #chatbox {
+            margin-top: 250px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="row animated bounceInLeft">
+            <div class="col-sm-12 col-md-6 col-lg-5 col-xl-5 mx-auto" id="chatbox">
+                <div class="card">
+                    <div class="card-header">Chat as...</div>
+                    <div class="card-body">
+                        <input type="text" id="chatName" class="form-control" placeholder="Enter a name" required>
+                        <button class="btn btn-dark mt-2" id="enter">Continue</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="libs/enter.js"></script>
+</body>
+
+</html>

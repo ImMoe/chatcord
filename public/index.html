@@ -1,0 +1,39 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.3.0/socket.io.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="navbar">
+        <div class="container">
+            <div class="navbar-brand">Chatcord</div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row mt-4">
+            <div class="col">
+                <div class="card card-body p-0 py-3" id="chat">
+                    <div id="typing" class="px-2"></div>
+                </div>
+                <div class="send-message d-flex mt-3">
+                    <input type="text" id="message" class="form-control" placeholder="Send a message...">
+                    <button type="submit" class="btn btn-dark ml-3" id="send">Send</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="libs/main.js"></script>
+</body>
+
+</html>
